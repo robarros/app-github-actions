@@ -14,5 +14,5 @@ jobs:
     uses: robarros/workflows/.github/workflows/deploy.yaml@main
     needs: build
     secrets: inherit
-    #with:
-    #docker_image: ${{ needs.build.outputs.docker_image }}
+    with:
+      docker_image: ${{ needs.build.outputs.docker_image }}
