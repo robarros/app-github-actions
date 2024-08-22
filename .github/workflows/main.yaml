@@ -15,4 +15,4 @@ jobs:
     needs: build
     secrets: inherit
     with:
-      docker_image: ${{ needs.build.outputs.docker_image }}
+      image-tag: ${{ needs.build.outputs.image-tag}}
